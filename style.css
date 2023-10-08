@@ -1,18 +1,47 @@
 @charset "UTF-8";
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --color1: #3fb8af;
   --color2: #7fc7af;
   --color3: #dad8a7;
   --color4: #ff9e9d;
   --color5: #ff3d7f;
+
+  --font-default: "Open Sans", sans-serif;
+  --font-title: "Concert One", cursive;
 }
 
 body {
+  font-family: var(--font-default);
+
   padding: 0;
   margin: 0;
 
-  background: var(--color5);
+  background: var(--color2);
+}
+
+h1 {
+  font-family: var(--font-title);
+  color: var(--color3);
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 200px;
+  background: linear-gradient(to bottom, var(--color5), var(--color4));
+}
+
+h2 {
+  font-family: var(--font-title);
+  color: var(--color3);
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 200px;
+  background: linear-gradient(to bottom, var(--color3), var(--color2));
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -22,4 +51,70 @@ nav {
 
 nav #logo img {
   width: 5vh;
+  margin-left: 15px;
+}
+
+main section {
+  background: linear-gradient(to bottom, var(--color4) 1%, var(--color3));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#capa {
+  max-width: 75vw;
+}
+
+.carrossel {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, var(--color2), var(--color1));
+  border-radius: 2px;
+
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 55vh;
+
+  padding: 25px;
+}
+
+.carrossel img {
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s;
+}
+
+.carrossel img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background: linear-gradient(to top, var(--color2), var(--color1));
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  background: var(--color4);
+  border: 1px solid var(--color4);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  padding: 16px;
+  margin: 0 12px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+footer a:hover {
+  background: var(--color5);
+  border: 1.5px solid var(--color5);
+}
+
+p {
+  text-align: center;
+  margin: 10px 0;
 }
