@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+  --color1: #3fb8af;
+  --color2: #7fc7af;
+  --color3: #dad8a7;
+  --color4: #ff9e9d;
+  --color5: #ff3d7f;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background: var(--color5);
+}
+
+nav {
+  height: 5vh;
+  background: white;
+}
+
+nav #logo img {
+  width: 5vh;
+}
