@@ -22,16 +22,22 @@ body {
   padding: 0;
   margin: 0;
 
-  background: var(--color2);
+  background: linear-gradient(
+    to bottom,
+    var(--color4),
+    var(--color3),
+    var(--color2),
+    var(--color1)
+  );
 }
 
 h1 {
   font-family: var(--font-title);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   color: var(--color3);
   text-align: center;
   font-size: 2.5em;
   line-height: 200px;
-  background: linear-gradient(to bottom, var(--color5), var(--color4));
 }
 
 h2 {
@@ -40,22 +46,27 @@ h2 {
   text-align: center;
   font-size: 2.5em;
   line-height: 200px;
-  background: linear-gradient(to bottom, var(--color3), var(--color2));
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav {
-  height: 5vh;
-  background: white;
+  height: 10vh;
+  background: linear-gradient(
+    to right,
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4),
+    var(--color5)
+  );
 }
 
 nav #logo img {
-  width: 5vh;
-  margin-left: 15px;
+  height: 35px;
+  margin: 15px 0 0 15px;
 }
 
 main section {
-  background: linear-gradient(to bottom, var(--color4) 1%, var(--color3));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,34 +74,45 @@ main section {
 
 #capa {
   max-width: 75vw;
+
+  border-radius: 15px;
+
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .carrossel {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to bottom, var(--color2), var(--color1));
-  border-radius: 2px;
-
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  min-height: 55vh;
 
-  padding: 25px;
+  margin: 5px;
+  border-radius: 15px;
+
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .carrossel img {
   border-radius: 15px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+
+  margin: 15px;
+
   transition: transform 0.5s;
+
 }
 
 .carrossel img:hover {
   transform: scale(1.1);
+  border-radius: 15px;
+
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 footer {
-  background: linear-gradient(to top, var(--color2), var(--color1));
   display: flex;
   justify-content: center;
 }

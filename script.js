@@ -19,7 +19,7 @@ function abrirImagem(event) {
 
   // Clonar a imagem para a sobreposição
   const enlargedImage = imagem.cloneNode();
-  enlargedImage.style.width = "55%"; // Largura da imagem ampliada
+  enlargedImage.style.width = "270px"; // Largura da imagem ampliada
   enlargedImage.style.height = "auto"; // Altura ajustada automaticamente para manter a proporção
   enlargedImage.style.opacity = "0"; // Começa com a opacidade 0
   enlargedImage.style.borderRadius = "15px"; // Border radius de 15px
