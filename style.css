@@ -94,7 +94,9 @@ main section {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.carrossel img {
+.item {
+  width: 270px;
+
   border-radius: 15px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
 
@@ -104,7 +106,7 @@ main section {
 
 }
 
-.carrossel img:hover {
+.item:hover {
   transform: scale(1.1);
   border-radius: 15px;
 
