@@ -13,7 +13,7 @@
   --color5: #ff3d7f;
 
   --font-default: "Open Sans", sans-serif;
-  --font-title: "Concert One", cursive;
+  --font-title:  'JetBrains Mono', monospace;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   background: linear-gradient(
     45deg,
     var(--color4),
-    var(--color3),
+    var(--color3),  
     var(--color2),
     var(--color1)
   );
