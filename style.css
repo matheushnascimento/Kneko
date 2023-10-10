@@ -23,7 +23,7 @@ body {
   margin: 0;
 
   background: linear-gradient(
-    to bottom,
+    45deg,
     var(--color4),
     var(--color3),
     var(--color2),
@@ -70,15 +70,23 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background: rgba(0, 0, 0, 0.3) url(images/comemorativas/dia-da-criancas.png);
 }
 
 #capa {
-  max-width: 75vw;
+  max-width: 95vw;
 
+  border-radius: 15px;
+}
+
+.destaque {
+  margin: auto 5px;
   border-radius: 15px;
 
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.3);
+    background: url(images/comemorativas/dia-da-criancas.png);
+  background-size: cover;
 }
 
 .carrossel {
@@ -103,7 +111,6 @@ main section {
   margin: 15px;
 
   transition: transform 0.5s;
-
 }
 
 .item:hover {
