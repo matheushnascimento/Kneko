@@ -13,7 +13,7 @@
   --color5: #ff3d7f;
 
   --font-default: "Open Sans", sans-serif;
-  --font-title: 'Concert One', cursive;
+  --font-title: "Concert One", cursive;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   background: linear-gradient(
     45deg,
     var(--color4),
-    var(--color3),  
+    var(--color3),
     var(--color2),
     var(--color1)
   );
@@ -85,7 +85,7 @@ main section {
   border-radius: 15px;
 
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    background: url(images/comemorativas/dia-da-criancas.png);
+  background: url(images/comemorativas/dia-da-criancas.png);
   background-size: cover;
 }
 
@@ -126,9 +126,14 @@ footer {
   justify-content: center;
 }
 
+.social {
+  width: 25px;
+  height: 25px;
+}
+
 footer a {
-  background: var(--color4);
-  border: 1px solid var(--color4);
+  background: var(--color2);
+  border: 1.5px solid rgba(255, 255, 255, 0);
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -141,11 +146,26 @@ footer a {
 }
 
 footer a:hover {
-  background: var(--color5);
-  border: 1.5px solid var(--color5);
+  background: var(--color1);
+  border: 1.5px solid var(--color3);
 }
 
-p {
+p,
+p a {
   text-align: center;
   margin: 10px 0;
+  color: var(--color5);
+}
+
+a {
+  color: var(--color3);
+}
+
+p a {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+p a:hover {
+  color: var(--color2);
 }
