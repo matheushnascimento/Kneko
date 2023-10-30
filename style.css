@@ -20,6 +20,7 @@
 
 body {
   overflow-x: hidden;
+  max-width: 100vw;
 
   font-family: var(--font-default);
 
@@ -35,22 +36,23 @@ body {
   );
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--font-title);
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   color: var(--color3);
   text-align: center;
-  font-size: 4rem;
-  line-height: 200px;
+  line-height: 5rem;
+
+  margin: 2.4rem auto;
+}
+
+h1 {
+  font-size: 3.4rem;
 }
 
 h2 {
-  font-family: var(--font-title);
-  color: var(--color3);
-  text-align: center;
-  font-size: 4rem;
-  line-height: 200px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
 }
 
 nav {
@@ -66,8 +68,8 @@ nav {
 }
 
 nav #logo img {
-  height: 35px;
-  margin: 15px 0 0 15px;
+  height: 3.5rem;
+  margin: 1.5rem 0 0 1.5rem;
 }
 
 main section {
@@ -79,14 +81,14 @@ main section {
 }
 
 #capa {
-  max-width: 95vw;
+  max-width: 100vw;
 
   border-radius: 15px;
 }
 
 .destaque {
-  margin: auto 5px;
-  border-radius: 15px;
+  margin: auto 0.5rem;
+  border-radius: 1.5rem;
 
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   background: url(images/comemorativas/dia-da-criancas.png);
@@ -99,7 +101,7 @@ main section {
   flex-wrap: wrap;
   align-content: space-between;
 
-  margin: 5px;
+  margin: .5rem;
   border-radius: 15px;
 
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
@@ -107,12 +109,12 @@ main section {
 }
 
 .item {
-  width: 270px;
+  width: 27rem;
 
   border-radius: 15px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
 
-  margin: 15px;
+  margin: 1.5rem;
 
   transition: transform 0.5s;
 }
@@ -131,8 +133,8 @@ footer {
 }
 
 .social {
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 footer a {
@@ -142,8 +144,8 @@ footer a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
-  padding: 16px;
-  margin: 0 12px;
+  padding: 1.6rem;
+  margin: 0 1.2rem;
 
   transition: background 0.2s;
   border-radius: 50%;
@@ -157,7 +159,7 @@ footer a:hover {
 p,
 p a {
   text-align: center;
-  margin: 10px 0;
+  margin: 1rem 0;
   color: var(--color5);
 }
 
