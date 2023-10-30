@@ -19,6 +19,8 @@
 }
 
 body {
+  overflow-x: hidden;
+
   font-family: var(--font-default);
 
   padding: 0;
